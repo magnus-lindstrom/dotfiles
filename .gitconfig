@@ -1,0 +1,9 @@
+[user]
+	email = magnus.lindstrom@tuta.io
+	name = Magnus Lindstroem
+[alias]
+	st = status
+	# dash at the end makes $1 into argument nr1, and not nr2.
+	fp = !bash -c 'git add -A && git commit -m \"${1:-debug}\" && git push' -
+[core]
+	editor = vim
