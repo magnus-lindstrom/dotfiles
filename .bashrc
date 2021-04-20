@@ -15,6 +15,7 @@ export PS1="${bold_on}${green}\u${default_white}:${blue}\w${reset_font}$ "
 export EDITOR=vim
 
 alias ll='ls -la'
+alias c='clear'
 alias ac='. .venv/bin/activate'
 alias de='deactivate'
 # a tree command that skips common "bloaters"
