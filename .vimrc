@@ -22,3 +22,8 @@ let block_shape = "\<Esc>[2 q"
 let &t_SI = beam_shape
 let &t_SR = underline_shape
 let &t_EI = block_shape
+
+" when exiting insert mode, change cursor to normal mode after 1ms
+set ttimeout
+set ttimeoutlen=1
+set ttyfast
