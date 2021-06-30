@@ -1,5 +1,6 @@
-" display line numbers
-set nu
+""" LINE NUMBERS, FOLDS
+set number
+autocmd FileType python setlocal foldmethod=indent
 
 """ INDENTATIONS AND STUFF
 filetype plugin indent on
@@ -14,7 +15,7 @@ set formatoptions=cq
 set textwidth=80
 set shiftwidth=2
 " .py files should indent in groups of 4 spaces
-autocmd FileType python setlocal shiftwidth=4 tabstop=4 slkdfj sdlkfj sdflkj sdl
+autocmd FileType python setlocal shiftwidth=4 tabstop=4
 " indentLine, plugin that shows help lines for indentation. Take file from
 " after/plugin/ and put it in .vim/plugin to install.
 " https://github.com/Yggdroot/indentLine.git
