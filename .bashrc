@@ -14,7 +14,8 @@ export PS4='Line ${LINENO}: '
 export PS1="${bold_on}${green}\u${default_white}:${blue}\w${reset_font}$ "
 export EDITOR=vim
 
-alias ll='ls -la'
+alias ls='ls --color=always'
+alias ll='ls -la --color=always'
 alias c='clear'
 alias ac='. .venv/bin/activate'
 alias de='deactivate'
@@ -23,3 +24,5 @@ alias tre='tree --matchdirs -I "__pycache__|dist|*egg-info"'
 
 git config --global alias.unstage 'reset HEAD --'
 git config --global alias.logg 'log --graph --all --decorate --pretty=oneline --abbrev-commit'
+
+export PATH+="$PATH:/home/magnus/.cargo/bin"
