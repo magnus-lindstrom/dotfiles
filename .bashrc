@@ -29,3 +29,5 @@ alias grep='grep --color'
 
 git config --global alias.unstage 'reset HEAD --'
 git config --global alias.logg 'log --graph --all --decorate --pretty=oneline --abbrev-commit'
+
+export PATH+="$PATH:/home/magnus/.cargo/bin"
