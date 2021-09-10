@@ -20,7 +20,7 @@ alias c='clear'
 alias ac='. .venv/bin/activate'
 alias de='deactivate'
 # a tree command that skips common "bloaters"
-alias tre='tree -C --matchdirs -I "__pycache__|dist|*egg-info"'
+alias tre='tree -C --matchdirs -I "__pycache__|*.pyo|dist|*egg-info"'
 # a grep command that skips common "bloaters"
 gre_cmd='grep --color --exclude-dir=__pycache__ --exclude-dir=.git '
 gre_cmd+='--exclude-dir=dist --exclude-dir=.mypy_cache'

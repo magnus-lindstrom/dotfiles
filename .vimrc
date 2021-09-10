@@ -31,6 +31,13 @@ let &t_SR = underline_shape
 let &t_EI = block_shape
 " color first column after maximum textwidth
 set colorcolumn=+1
+" highlight trailing whitespaces
+highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$/
+" highlight searches and clear highlight with space
+set hlsearch
+hi Search ctermfg=Black ctermbg=Green
+nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 
 " when exiting insert mode, change cursor to normal mode after 1ms
 set ttimeout
