@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # use vim keybindings in command line
 set -o vi
 
@@ -26,6 +28,18 @@ gre_cmd='grep --color --exclude-dir=__pycache__ --exclude-dir=.git '
 gre_cmd+='--exclude-dir=dist --exclude-dir=.mypy_cache'
 alias gre="$gre_cmd"
 alias grep='grep --color'
+
+function jsonify() {
+  if [ $# -ne 1 ]; then
+    echo "Takes one input argument: the name of the file to jsonify"
+    return 1
+  fi
+  new_file_name="./jsonify_out"
+  filename="$1"
+  # replace all single quotes with double quotes
+  sed "s/'/\"/g" "${filename}" > "${new_file_name}"
+  echo "jq-readable file written to ${new_file_name}"
+}
 
 git config --global alias.unstage 'reset HEAD --'
 git config --global alias.logg 'log --graph --all --decorate --pretty=oneline --abbrev-commit'
