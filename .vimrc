@@ -22,7 +22,7 @@ autocmd FileType python setlocal shiftwidth=4 tabstop=4
 
 """ VISUAL GUIDES
 " I/R/V = insert/replace/visual mode
-" s/e = start/exit
+" S/E = start/exit
 let beam_shape = "\<Esc>[6 q"
 let underline_shape = "\<Esc>[4 q"
 let block_shape = "\<Esc>[2 q"
@@ -32,7 +32,7 @@ let &t_EI = block_shape
 " color first column after maximum textwidth
 set colorcolumn=+1
 " highlight trailing whitespaces
-highlight ExtraWhitespace ctermbg=red guibg=red
+highlight ExtraWhitespace ctermbg=blue guibg=red
 match ExtraWhitespace /\s\+$/
 " highlight searches and clear highlight with space
 set hlsearch
