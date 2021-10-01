@@ -36,11 +36,14 @@ function jsonify() {
     echo "Takes one input argument: the name of the file to jsonify"
     return 1
   fi
-  new_file_name="./jsonify_out"
+  new_filename="./jsonify_out"
   filename="$1"
   # replace all single quotes with double quotes
-  sed "s/'/\"/g" "${filename}" > "${new_file_name}"
-  echo "jq-readable file written to ${new_file_name}"
+  sed "s/'/\"/g" "${filename}" > "${new_filename}"
+  # replace all True and False with "True" and "False". Skip existing
+  # True/False that already has quotes surrounding them.
+  sed -i -E "s/([^\"])(True|False)([^\"])/\1\"\2\"\3/g" "${new_filename}"
+  echo "jq-readable file written to ${new_filename}"
 }
 
 git config --global alias.unstage 'reset HEAD --'
