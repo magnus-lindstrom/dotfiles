@@ -21,6 +21,7 @@ alias ll='ls -la --color=always'
 alias c='clear'
 alias ac='. .venv/bin/activate'
 alias de='deactivate'
+alias vim='nvim.appimage'
 # a tree command that skips common "bloaters"
 tree_ignore_cases="__pycache__|*.pyo|dist|*egg-info|*.d|*.rmeta|*.rlib|*.so"
 alias tre='tree -C --matchdirs -I "${tree_ignore_cases}"'
