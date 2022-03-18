@@ -35,4 +35,5 @@ set splitbelow                          " Horizontal splits will automatically b
 set splitright                          " Vertical splits will automatically be to the right
 set t_Co=256                            " Support 256 colors
 set clipboard=unnamedplus               " Copy paste between vim and everything else
-set mouse=a                             " Enable your mouse
+
+set textwidth=100
