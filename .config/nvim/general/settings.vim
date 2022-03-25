@@ -17,11 +17,6 @@
 " set timeoutlen=500                      " By default timeoutlen is 1000 ms
 " set formatoptions-=cro                  " Stop newline continution of comments
 
-" au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
-
-" You can't stop me
-" cmap w!! w !sudo tee %
-
 syntax enable                           " Enables syntax highlighing
 set conceallevel=0                      " So that I can see `` in markdown files
 set cursorline                          " Enable highlighting of the current line
@@ -34,6 +29,8 @@ set number                              " Line numbers
 set splitbelow                          " Horizontal splits will automatically be below
 set splitright                          " Vertical splits will automatically be to the right
 set t_Co=256                            " Support 256 colors
-set clipboard=unnamedplus               " Copy paste between vim and everything else
+"set clipboard=unnamedplus               " Copy paste between vim and everything else
+set tabstop=2                           " Insert 2 spaces for a tab
+set shiftwidth=2                        " Change the number of space characters inserted for indentation
 
 set textwidth=100
