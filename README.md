@@ -14,3 +14,7 @@ ln -s ~/repos/dotfiles/.config/nvim/ ~/.config/nvim
 ln -s ~/repos/dotfiles/.bashrc ~/.bashrc
 ln -s ~/repos/dotfiles/.tmux.conf ~/.tmux.conf
 ```
+
+## Download/Enable plugins
+Type `:PlugInstall` in nvim to install all plugins mentioned in
+`.config/nvim/vim-plug/plugins.vim`.
