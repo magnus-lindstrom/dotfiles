@@ -7,6 +7,19 @@ Neovim 0.6.0 is needed at the least. Can be installed from the stable ppa. See
 updated info on `https://launchpad.net/~neovim-ppa/+archive/ubuntu/stable`.
 The plugin manager vim-plug, plus packages, are included in this repo.
 
+### Plugin specifics
+
+#### Markdown-preview
+Start preview with :MarkdownPreview
+
+When using WSL2 and markdown-preview, you need xdg-utils installed.
+```
+sudo apt-get install -y xdg-utils
+```
+
+After PlugInstall, you might get 'pre build and node is not found' as an error. If you do, run 
+`:call mkdp#util#install()` from nvim, and it should work afterwards.
+
 ## Symlinks
 Create symlinks to dotfiles in repo.
 ```
