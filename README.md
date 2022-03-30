@@ -9,6 +9,14 @@ The plugin manager vim-plug, plus packages, are included in this repo.
 
 ### Plugin specifics
 
+Run `:PlugInstall` to install all plugins.
+
+#### Coc language server
+Install the appropriate language server prior to its use.
+```
+:CocInstall coc-python
+```
+
 #### Markdown-preview
 Start preview with :MarkdownPreview
 
