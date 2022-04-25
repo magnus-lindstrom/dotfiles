@@ -7,8 +7,10 @@ Neovim 0.6.0 is needed at the least. Can be installed from the stable ppa. See
 updated info on `https://launchpad.net/~neovim-ppa/+archive/ubuntu/stable`.
 The plugin manager vim-plug, plus packages, are included in this repo.
 
-### Plugin specifics
+### LSP servers
+Python: python-lsp-server `pip install pyright`
 
+### Plugin specifics
 Run `:PlugInstall` to install all plugins.
 
 #### Markdown-preview

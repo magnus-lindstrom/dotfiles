@@ -33,6 +33,7 @@ set t_Co=256                            " Support 256 colors
 "set clipboard=unnamedplus               " Copy paste between vim and everything else
 set tabstop=2                           " Insert 2 spaces for a tab
 set shiftwidth=2                        " Change the number of space characters inserted for indentation
+colorscheme peachpuff                   " works with floating windows
 
 set textwidth=100
 

@@ -53,3 +53,4 @@ git config --global alias.logg 'log --graph --all --decorate --pretty=oneline --
 git config --global alias.st 'status'
 
 export PATH+="$PATH:/home/magnus/.cargo/bin"
+export PATH+="$PATH:${HOME}/.local/bin"
