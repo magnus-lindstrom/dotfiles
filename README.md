@@ -11,17 +11,6 @@ The plugin manager vim-plug, plus packages, are included in this repo.
 
 Run `:PlugInstall` to install all plugins.
 
-#### Coc language server
-You need node version >= 12.12.0 to run coc.nvim. Install v16 with below commands.
-```
-curl -s https://deb.nodesource.com/setup_16.x | sudo bash
-sudo apt install nodejs -y
-```
-Install the appropriate language server prior to its use.
-```
-:CocInstall coc-python
-```
-
 #### Markdown-preview
 Start preview with :MarkdownPreview
 
