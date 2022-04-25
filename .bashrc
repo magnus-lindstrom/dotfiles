@@ -27,8 +27,8 @@ alias vim='nvim'
 tree_ignore_cases="__pycache__|*.pyo|dist|*egg-info|*.d|*.rmeta|*.rlib|*.so"
 alias tre='tree -C --matchdirs -I "${tree_ignore_cases}"'
 # a grep command that skips common "bloaters"
-gre_cmd='grep --color --exclude-dir=__pycache__ --exclude-dir=.git '
-gre_cmd+='--exclude-dir=dist --exclude-dir=.mypy_cache '
+gre_cmd='grep --line-number --color --exclude-dir=__pycache__ '
+gre_cmd+='--exclude-dir=.git --exclude-dir=dist --exclude-dir=.mypy_cache '
 gre_cmd+='--exclude-dir=.venv* --exclude=*.pyo'
 alias gre="$gre_cmd"
 alias grep='grep --color'

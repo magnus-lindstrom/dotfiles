@@ -6,3 +6,5 @@ bla = [1, 2, 3, 4, 5]
 
 for a in bla:
     print(a)
+    for b in bla:
+        print(b)

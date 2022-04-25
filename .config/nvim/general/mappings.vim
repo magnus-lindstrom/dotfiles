@@ -9,3 +9,6 @@ nnoremap <C-C> :bp \| bd # <CR>
 map <space> :noh <CR>
 
 nnoremap <C-D> :exe ":normal i" .. strftime("%Y-%m-%d") <CR>
+
+" search for highlighted text in visual mode
+vnoremap * y/\V<C-R>=escape(@",'/\')<CR><CR>
