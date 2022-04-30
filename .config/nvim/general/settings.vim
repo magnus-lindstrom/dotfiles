@@ -17,10 +17,11 @@
 " set timeoutlen=500                      " By default timeoutlen is 1000 ms
 " set formatoptions-=cro                  " Stop newline continution of comments
 
-syntax enable                           " Enables syntax highlighing
+" remove syntax enable to enable lsp linter live updates
+" syntax enable                           " Enables syntax highlighing
 set conceallevel=0                      " So that I can see `` in markdown files
-set cursorline                          " Enable highlighting of the current line
-set cursorlineopt=number                " Just highlight the line number, not entire line.
+" set cursorline                          " Enable highlighting of the current line
+" set cursorlineopt=number                " Just highlight the line number, not entire line.
 set encoding=utf-8                      " The encoding displayed
 set expandtab                           " Converts tabs to spaces
 set fileencoding=utf-8                  " The encoding written to file
