@@ -1,0 +1,26 @@
+{
+  "configurations": {
+    "<name>: Launch": {
+      "adapter": "debugpy",
+      "filetypes": [ "python" ],
+      "configuration": {
+        "name": "Python: Run current script",
+        "type": "python",
+        "request": "launch",
+        "cwd": "${cwd}",
+        "python": "/home/mlinds29/hi_python/bin/python3.7",
+        "stopOnEntry": true,
+        "console": "externalTerminal",
+        "debugOptions": [],
+        "program": "${file}"
+      },
+      "breakpoints": {
+        "exception": {
+          "uncaught": "Y",
+          "raised": "N",
+          "userUnhandled": "N"
+        }
+      }
+    }
+  }
+}
